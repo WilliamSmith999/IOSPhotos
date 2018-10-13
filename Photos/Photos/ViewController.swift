@@ -27,6 +27,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
         }else{
             print("there is no camera")
+            let alert = UIAlertController(title: "No camera found?", message: "Sorry action aborted", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     
