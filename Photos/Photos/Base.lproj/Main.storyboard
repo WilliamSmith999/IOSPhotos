@@ -32,7 +32,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Camera" id="6Xm-hN-U9Z"/>
+                        <barButtonItem title="Camera" id="6Xm-hN-U9Z">
+                            <connections>
+                                <action selector="takePhoto:" destination="BYZ-38-t0r" id="6K9-Vt-k24"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem title="Organize" id="eI5-Vc-4Ml"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="guQ-Cb-Neb"/>
