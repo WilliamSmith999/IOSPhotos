@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Photos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
@@ -32,12 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Camera" id="6Xm-hN-U9Z">
+                        <barButtonItem systemItem="camera" id="6Xm-hN-U9Z">
                             <connections>
                                 <action selector="takePhoto:" destination="BYZ-38-t0r" id="6K9-Vt-k24"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Organize" id="eI5-Vc-4Ml"/>
+                        <barButtonItem systemItem="organize" id="eI5-Vc-4Ml"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="guQ-Cb-Neb"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -45,6 +44,7 @@
                         <outlet property="imageView" destination="pv7-XF-eiv" id="Nwb-9G-MqJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="974" y="-672"/>
         </scene>
