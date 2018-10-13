@@ -41,6 +41,9 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="guQ-Cb-Neb"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="pv7-XF-eiv" id="Nwb-9G-MqJ"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="974" y="-672"/>
