@@ -36,7 +36,11 @@
                                 <action selector="takePhoto:" destination="BYZ-38-t0r" id="6K9-Vt-k24"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem systemItem="organize" id="eI5-Vc-4Ml"/>
+                        <barButtonItem systemItem="organize" id="eI5-Vc-4Ml">
+                            <connections>
+                                <action selector="imagesLoad:" destination="BYZ-38-t0r" id="BRE-tP-rLi"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="guQ-Cb-Neb"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>

@@ -38,5 +38,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         imagePicker.dismiss(animated: true, completion: nil)
         imageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
     }
+    @IBAction func imagesLoad(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker2 = UIImagePickerController()
+            imagePicker2.delegate = self
+            imagePicker2.sourceType = .photoLibrary;
+            imagePicker2.allowsEditing = true
+            self.present(imagePicker2, animated: true, completion: nil)
+        }
+    }
+    
 }
 
