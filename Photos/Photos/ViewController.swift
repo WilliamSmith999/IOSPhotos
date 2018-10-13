@@ -19,11 +19,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
 
     @IBAction func takePhoto(_ sender: Any) {
-        
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)){
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
+            
+        }else{
+            print("there is no camera")
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
